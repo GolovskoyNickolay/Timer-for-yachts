@@ -1,0 +1,38 @@
+page-home {
+.clock{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 110px;
+  width: 100%;
+  text-align: center;
+}
+  .small-clock{
+    font-size: 80px;
+  }
+  .hidden{
+    display: none;
+  }
+.start-btn{
+  position: absolute;
+  top: 68%;
+  width: 100%;
+  background-color: transparent;
+  font-size: 50px;
+}
+  .btns-wrapper{
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    padding: 20px 10px;
+    font-size: 0px;
+  }
+  .btn-first, .btn-second{
+    font-size: 25px;
+    background-color: transparent;
+  }
+  .btn-second{
+    float: right;
+  }
+}

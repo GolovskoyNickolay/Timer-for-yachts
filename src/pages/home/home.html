@@ -1,0 +1,26 @@
+<!--<ion-header>-->
+  <!--<ion-navbar>-->
+    <!--<ion-title>-->
+      <!--Ionic Blank-->
+    <!--</ion-title>-->
+  <!--</ion-navbar>-->
+<!--</ion-header>-->
+
+<ion-content >
+    <div class="clock" [ngClass]="{'small-clock': hours}">
+      <span *ngIf="hours">{{hours}}:</span><span>{{minutes}}</span>:<span>{{seconds}}</span>
+    </div>
+<button *ngIf="start" (click)="startTimer()" class="start-btn">START</button>
+
+  <div *ngIf="!start && !stopBool" class="btns-wrapper">
+    <button class="btn-first" (click)="sync()" [ngClass]="{'hidden': hidden}">Sync</button>
+    <button class="btn-second" (click)="stop()">Stop</button>
+  </div>
+
+  <div *ngIf="stopBool" class="btns-wrapper">
+    <button class="btn-first" (click)="resume()">Resume</button>
+    <button class="btn-second" (click)="reset()">Reset</button>
+  </div>
+  <audio id="audio" src="assets/beep-07.wav" autostart="false" ></audio>
+  <audio id="audio-long" src="assets/beep-11.mp3" autostart="false" ></audio>
+</ion-content>
