@@ -1,11 +1,18 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
+import { Platform } from 'ionic-angular';
+declare var cordova:any;
+//console.log(cordova);
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
 })
+
+
+
 export class HomePage {
+  platform:any;
   time: number = 300;
   hours: number = 0;
   minutes: number = 5;
@@ -14,7 +21,27 @@ export class HomePage {
   stopBool: boolean = false;
   hidden:boolean = false;
   timer:any;
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController,platform: Platform) {
+
+
+    this.platform = platform;
+
+    platform.ready().then(
+      () => {
+          if (this.platform.is('mobile')){
+            cordova.plugins.backgroundMode.setDefaults({
+              title: 'My App Name',
+              text: 'Active in background...'});
+            cordova.plugins.backgroundMode.enable();
+
+          }
+
+
+
+  }
+    );
+
+
 
   }
 
