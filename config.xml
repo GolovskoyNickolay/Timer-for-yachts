@@ -49,10 +49,10 @@
         <icon height="57" src="resources/ios/custom-icon/Icon.png" width="57" />
         <icon height="114" src="resources/ios/custom-icon/Icon@2x.png" width="114" />
         <icon height="40" src="resources/ios/custom-icon/Icon-Small-40.png" width="40" />
-        <icon height="80" src="resources/ios/custom-icon/Icon-40@2x.png" width="80" />
-        <icon height="120" src="resources/ios/custom-icon/Icon-40@3x.png" width="120" />
+        <icon height="80" src="resources/ios/custom-icon/Icon-Small-40@2x.png" width="80" />
+        <icon height="120" src="resources/ios/custom-icon/Icon-Small-40@3x.png" width="120" />
         <icon height="50" src="resources/ios/custom-icon/Icon-Small-50.png" width="50" />
-        <icon height="100" src="resources/ios/custom-icon/Icon-50@2x.png" width="100" />
+        <icon height="100" src="resources/ios/custom-icon/Icon-Small-50@2x.png" width="100" />
         <icon height="60" src="resources/ios/custom-icon/Icon-60.png" width="60" />
         <icon height="120" src="resources/ios/custom-icon/Icon-60@2x.png" width="120" />
         <icon height="180" src="resources/ios/custom-icon/Icon-60@3x.png" width="180" />
