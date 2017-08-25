@@ -96,11 +96,13 @@ export class HomePage {
     clearInterval(this.timer);
   }
   PlaySound() {
-  var sound = <HTMLAudioElement>document.getElementById("audio");
-  sound.play()
+    let audio = new Audio();
+        audio.src = 'assets/beep-07.wav';
+        audio.play()
 }
   PlayLongSound() {
-    var sound = <HTMLAudioElement>document.getElementById("audio-long");
-    sound.play()
+    let audio = new Audio();
+        audio.src = 'assets/beep-11.mp3';
+        audio.play()
   }
 }
